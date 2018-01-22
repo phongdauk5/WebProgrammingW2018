@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body aside{
+			float: left;
+			width: 20%;
+			display: block;
+			font-size: 15px;
+			margin: 10px;
+		}
+		body aside ul{
+			padding-left: 0;
+			border: 0;
+		}
+		body aside ul li h2 {
+			font-size: 17px;
+		}
+		body section{
+			float: left;
+			width: 70%;
+			margin: 20px;
+			display: block;
+		}
+		body header nav{
+			display: inline-block;
+			width: 80%;
+			border: 2px solid black;
+			margin: 30px;
+		}
+		body{
+			background-color: powderblue;
+			color: black;
+		}
+		article{
+			border: 1px solid black;
+			padding: 0px 15px 10px 15px;
+		}
+		article footer{
+			text-align: right;
+		}
+		aside ul li{
+			list-style-type: none;
+		}
+		#header-logo{
+			float: left;
+			margin-left: 10%;
+		}
+		#btn-register{
+			border-radius: 10px;
+			border: 1px solid #603382;
+			float: left;
+		}
+		#btn-register:hover{
+			background-color: purple;
+		}
+		.logintextbox{
+			width: 150px;
+			border-radius: 10px;
+			padding: 2px;
+			margin: 5px;
+			border: 1px solid black;
+		}
+		.lable-login{
+			width: 50px;
+			margin: 5px;
+		}
+		#register{
+			float: right;
+			margin: 0px;
+			text-align: right;
+		}
+		.header-nav-list li{
+			list-style-type: none;
+			margin: 5px;
+			display: inline;
+		}
+		.header-nav-list a{
+			color: red;
+			text-decoration: none;
+		}
+		.header-nav-list li a:hover {
+			color: green;
+			text-decoration: underline;
+		}		
+		.aside-list{
+			display: block;
+			border: 1px solid black;
+			border-radius: 2px;
+			padding: 10px;
+			margin: 10px 0px;
+		}
+		ul .list-custom-type li{
+			background: url(images/dotstyle.png) no-repeat;
+			background-position: 0 50%;
+			padding-left: 25px;
+		}
+		.none-text-decoration{
+			text-decoration: none;
+		}
+		
+		.author{
+			text-decoration: none;
+		}
+		.author:hover{
+			text-decoration: underline;
+		}
+		#end-footer{
+			clear: both;
+			display: block;
+			color: white;
+			font-size: 20px;
+		}
+		ul.header-sub-nav-list{
+			display: none;
+			position: absolute;
+			background-color: #FAEBD7;
+			border-radius: 5px;
+			float: none;
+			margin: 2px;
+			padding: 0px;
+		}
+		.header-sub-nav-list li{
+			display: block;
+			float: none;
+			margin: 20px;
+			border-bottom: 1px solid black;
+			padding: 10px;
+		}
+		.header-sub-nav-list li a{
+			color: green;
+			display: inline-block;
+			float: none;
+		}
+		body header div nav ul li:hover ul.header-sub-nav-list{
+			display: block;
+			opacity: 0.85;
+		}
+	</style>
+	<title>CSS Styling</title>
+</head>
+<body>
+<header>
+	<div>
+		<div id="header-logo">
+		<a href=""><img src="images/playstation_logo.png" width="150" height="80"></a>
+		</div>
+		<div id="register">
+			<form>
+			<div>
+			<label class="lable-login">Username: </label><input type="textbox" name="username" class="logintextbox"><br>
+			<label class="lable-login">Password: </label><input type="password" name="password" class="logintextbox"><br>
+			</div>
+			<button id="btn-register">Register</button>
+			</form>
+		</div>
+	</div>
+	<div>
+	<nav>
+		<ul class="header-nav-list">
+			<li><a href="">Home</a></li>
+			<li><a href="" class="sub-list">Presentations</a>
+				<ul class="header-sub-nav-list">
+					<li>
+						<a href="">Intro CSS Styling Course</a>
+					</li>
+					<li>
+						<a href="">CSS Overview</a>
+					</li>
+					<li>
+						<a href="">CSS Presentation</a>
+					</li>
+					<li>
+						<a href="">CSS Display</a>
+					</li>
+					<li>
+						<a href="">CSS Layout</a>
+					</li>
+					<li>
+						<a href="">SASS</a>
+					</li>
+					<li>
+						<a href="">LESS</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="">Videos</a></li>
+			<li><a href="">Trainers</a></li>
+			<li><a href="">Contacts</a></li>
+		</ul>
+	</nav>
+	</div>
+</header><br>
+<section>
+	<article>
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas, dui sed cursus placerat, felis metus sollicitudin nunc, nec venenatis augue tellus vitae nisl. Quisque ut venenatis est. Vestibulum non dolor nec sapien imperdiet semper nec quis massa. Phasellus ultrices vestibulum rutrum. Vestibulum auctor felis eget ipsum semper vulputate. Sed congue, metus sit amet tempus pretium, nunc sapien pellentesque elit, ut porttitor eros orci nec arcu. Nunc lobortis risus eget eros viverra dapibus.</p>
+		<footer>published by <a href="" class="author">Minko Ivanov</a> on 08-jan-2013 at 14:51</footer>
+	</article><br>
+	<article>
+		<h1>Vestibulum ante ipsum primis</h1>
+		<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eget tincidunt velit. Cras sed lectus mauris. Vivamus massa lacus, laoreet nec sollicitudin eu, pharetra sed elit. Aenean quis enim dui, sed mollis sapien. Duis vel eros sapien, sed blandit magna. Praesent a dolor leo, a gravida lectus. Fusce non aliquam nibh. Aenean nisl dui, faucibus consequat fermentum at, rutrum congue urna. Ut fringilla tempor risus dictum aliquam. Donec congue sapien et massa sagittis eget pharetra risus sollicitudin. Vestibulum urna nunc, feugiat sed tincidunt et, fringilla non nisi. Mauris neque tellus, lobortis a vehicula eget, volutpat id erat. Donec rutrum consectetur malesuada. Curabitur mollis orci at sapien tristique ac mattis nulla sollicitudin.</p>
+		<footer>published by <a href="" class="author">Minko Ivanov</a> on 08-jan-2013 at 14:51</footer>
+	</article><br>
+	<article>
+		<h1>Nullam ullamcorper dolor sed enim venenatis aliquet</h1>
+		<p>Nullam ullamcorper dolor sed enim venenatis aliquet. Aenean magna magna, consectetur vel gravida at, gravida ac eros. Donec tincidunt iaculis diam, sit amet aliquam libero fermentum non. Donec at lectus at eros interdum lobortis nec sed massa. Sed nec hendrerit magna. Nunc nec vestibulum lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum neque orci, quis dapibus justo. Sed id turpis a purus luctus dictum eget vitae tortor. Maecenas eu nunc in nisi interdum eleifend non sed ante. Integer sit amet rutrum magna. Maecenas sed blandit quam.</p>
+		<footer>published by <a href="" class="author">Minko Ivanov</a> on 08-jan-2013 at 14:51</footer>
+	</article>
+</section><br>
+<aside>
+	<ul class="none-list-style">
+		<li class="aside-list">
+			<h2>Widget</h2>
+			<p>Duis vel eros sapien, sed blandit magna. <a href="" class="none-text-decoration">Praesent</a> a dolor leo, a gravida <strong>lectus</strong>. Fusce non aliquam nibh. Aenean nisl dui, faucibus consequat fermentum at, rutrum congue urna.</p>
+		</li>
+		<li class="aside-list">
+			<h2>Widget</h2>
+			<ul class="list-custom-type">
+				<li>
+					Widget Item
+				</li>
+				<li>
+					Widget Item
+				</li>
+				<li>
+					Widget Item
+				</li>
+				<li>
+					Widget Item
+				</li>
+				<li>
+					Widget Item
+				</li>
+			</ul>
+		</li>
+		<li>
+			<li class="aside-list">
+			<h2>Widget</h2>
+			<p>Duis vel eros sapien, sed blandit magna. <a href="" class="none-text-decoration">Praesent</a> a dolor leo, a gravida <strong>lectus</strong>. Fusce non aliquam nibh. <em>Aenean nisl dui</em>, faucibus consequat fermentum at, rutrum congue urna.</p>
+			</li>
+		</li>
+	</ul>
+</aside>
+<footer id="end-footer">Telerick Software Academy</footer>
+</body>
+</html>
